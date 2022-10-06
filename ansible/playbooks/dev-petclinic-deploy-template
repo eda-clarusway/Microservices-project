@@ -7,7 +7,7 @@
       mode: '0755'
   - name: copy the docker config file
     become: yes
-    copy: 
+    copy:
       src: $JENKINS_HOME/.docker/config.json
       dest: /home/ubuntu/.docker/config.json
   - name: deploy petclinic application
